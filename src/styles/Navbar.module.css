@@ -1,0 +1,10 @@
+.navbar {
+  composes: secondaryBg from "colors.module.css";
+}
+
+.navbarLink {
+  display: flex;
+  justify-content: left;
+  gap: 1rem;
+  list-style: none;
+}

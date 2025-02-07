@@ -1,0 +1,29 @@
+/* 
+URL: https://coolors.co/palette/f8f9fa-e9ecef-dee2e6-ced4da-adb5bd-6c757d-495057-343a40-212529
+Color palette (light to dark):
+#F8F9FA
+#E9ECEF
+#DEE2E6
+#CED4DA
+#ADB5BD
+#6C757D
+#495057
+#343A40
+#212529
+*/
+
+.primaryBg {
+  background-color: #f8f9fa;
+}
+
+.secondaryBg {
+  background-color: #e9ecef;
+}
+
+.primaryColor {
+  color: #212529;
+}
+
+.secondaryColor {
+  color: #343a40;
+}

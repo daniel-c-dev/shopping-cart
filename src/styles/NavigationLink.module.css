@@ -1,0 +1,3 @@
+.navLink {
+  composes: primaryColor from "colors.module.css";
+}
