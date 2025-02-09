@@ -1,0 +1,6 @@
+.homeContainer {
+  composes: primaryBg from "colors.module.css";
+  height: 100vh;
+  width: 100vw;
+  padding: 1rem;
+}

@@ -1,6 +1,8 @@
+import styles from "../styles/Shop.module.css";
+
 const Shop = () => {
   return (
-    <div className="shop-container">
+    <div className={styles.shopContainer}>
       <p>Shop</p>
     </div>
   );

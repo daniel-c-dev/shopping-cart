@@ -1,3 +1,14 @@
 .navLink {
-  composes: primaryColor from "colors.module.css";
+  composes: secondaryColor tertiaryColorHover from "colors.module.css";
+  text-decoration: none;
+}
+
+.navLink:visited {
+  text-decoration: none;
+}
+.navLink:hover {
+  text-decoration: none;
+}
+.navLink:active {
+  text-decoration: none;
 }

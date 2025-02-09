@@ -1,9 +1,14 @@
 .navbar {
   composes: secondaryBg from "colors.module.css";
+  min-height: 2.5rem;
+  max-height: 3rem;
+  max-width: 100vw;
+  display: flex;
 }
 
-.navbarLink {
+.navbarLinks {
   display: flex;
+  align-items: center;
   justify-content: left;
   gap: 1rem;
   list-style: none;
