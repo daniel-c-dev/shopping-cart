@@ -26,4 +26,19 @@ describe("Navbar component", () => {
     // Assert that the location changes to the expected path
     expect(screen.getByText("Home")).toBeInTheDocument();
   });
+  it("navigates to shop", () => {
+    render(
+      <MemoryRouter initialEntries={["/"]}>
+        <RouterProvider router={router}>
+          <Navbar />
+        </RouterProvider>
+      </MemoryRouter>
+    );
+
+    const shopLink = screen.getByRole("link", { name: "Shop" });
+    fireEvent.click(shopLink);
+
+    // Assert that the location changes to the expected path
+    expect(screen.getByText("Shop")).toBeInTheDocument();
+  });
 });
