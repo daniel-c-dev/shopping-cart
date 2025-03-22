@@ -1,6 +1,6 @@
 .shopContainer {
   composes: primaryBg from "colors.module.css";
-  height: 100vh;
+  height: 100%;
   width: 100vw;
   padding: 1rem;
 }
