@@ -8,7 +8,7 @@ const Navbar = () => {
       <ul className={styles.navbarLinks}>
         <NavigationLink path="/" name="Home" />
         <NavigationLink path="/shop" name="Shop" />
-        <Cart />
+        <Cart itemCount={1} />
       </ul>
     </nav>
   );
