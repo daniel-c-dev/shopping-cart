@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { fireEvent, getByRole, render, screen } from "@testing-library/react";
+import { fireEvent, render, screen } from "@testing-library/react";
 import {
   createBrowserRouter,
   RouterProvider,

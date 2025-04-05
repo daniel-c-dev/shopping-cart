@@ -1,4 +1,5 @@
 import NavigationLink from "./NavigationLink";
+import Cart from "./Cart";
 import styles from "../styles/Navbar.module.css";
 
 const Navbar = () => {
@@ -7,6 +8,7 @@ const Navbar = () => {
       <ul className={styles.navbarLinks}>
         <NavigationLink path="/" name="Home" />
         <NavigationLink path="/shop" name="Shop" />
+        <Cart />
       </ul>
     </nav>
   );
