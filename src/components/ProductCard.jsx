@@ -2,22 +2,24 @@ import Image from "./Image.jsx";
 import Text from "./Text.jsx";
 import QuantityInput from "./QuantityInput.jsx";
 import AddToCartButton from "./AddToCartButton.jsx";
+import { useState } from "react";
 import { useOutletContext } from "react-router-dom";
 import styles from "../styles/ProductCard.module.css";
 import PropTypes from "prop-types";
 
 const ProductCard = ({ product }) => {
   const { addToCart } = useOutletContext();
+  const [quantity, setQuantity] = useState(1);
 
   const handleAddToCart = () => {
-    addToCart(product);
+    addToCart(product, quantity);
   };
 
   return (
     <div className={styles.productCard}>
       <Image src={product.image} />
       <Text text={product.title} />
-      <QuantityInput />
+      <QuantityInput quantity={quantity} setQuantity={setQuantity} />
       <AddToCartButton onClick={handleAddToCart} />
     </div>
   );
