@@ -7,11 +7,7 @@ const Products = ({ products }) => {
     <div className={styles.productsContainer}>
       {products.length > 0 ? (
         products.map((product) => (
-          <ProductCard
-            key={product.id}
-            title={product.title}
-            image={product.image}
-          />
+          <ProductCard key={product.id} product={product} />
         ))
       ) : (
         <p>No products available</p>

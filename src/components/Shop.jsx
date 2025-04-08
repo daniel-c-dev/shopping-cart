@@ -1,7 +1,7 @@
 import fetchProducts from "./fetchProducts.js";
 import Products from "./Products.jsx";
-import styles from "../styles/Shop.module.css";
 import { useState, useEffect } from "react";
+import styles from "../styles/Shop.module.css";
 
 const Shop = () => {
   const [products, setProducts] = useState([]);
