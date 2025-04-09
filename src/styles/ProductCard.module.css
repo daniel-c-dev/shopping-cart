@@ -15,3 +15,20 @@
   max-width: 15rem;
   max-height: 15rem;
 }
+
+@media screen and (max-width: 899px) {
+  .productCard img {
+    min-width: 8rem;
+    min-height: 8rem;
+    max-width: 15rem;
+    max-height: 15rem;
+  }
+}
+@media screen and (max-width: 599px) {
+  .productCard img {
+    min-width: 8rem;
+    min-height: 8rem;
+    max-width: 15rem;
+    max-height: 15rem;
+  }
+}
