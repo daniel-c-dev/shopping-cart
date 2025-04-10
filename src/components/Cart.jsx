@@ -1,20 +1,14 @@
-import Button from "./Button.jsx";
-import Text from "./Text.jsx";
-import cartIcon from "/public/cart-outline.svg";
-import styles from "../styles/cart.module.css";
-import PropTypes from "prop-types";
+import Text from "./Text";
+import TotalPrice from "./TotalPrice";
+import styles from "../styles/Cart.module.css";
 
-const Cart = ({ itemCount }) => {
+const Cart = () => {
   return (
-    <div className={styles.cart}>
-      <Button className={styles.cartButton} src={cartIcon} />
-      <Text className={styles.cartText} text={itemCount} />
+    <div className={styles.cartContainer}>
+      <Text text="Total" className="totalPriceLabel" />
+      <TotalPrice totalPrice={0} />
     </div>
   );
-};
-
-Cart.propTypes = {
-  itemCount: PropTypes.number,
 };
 
 export default Cart;

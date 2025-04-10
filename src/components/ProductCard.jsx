@@ -1,5 +1,6 @@
 import Image from "./Image.jsx";
 import Text from "./Text.jsx";
+import Price from "./Price.jsx";
 import QuantityInput from "./QuantityInput.jsx";
 import AddToCartButton from "./AddToCartButton.jsx";
 import { useState } from "react";
@@ -20,6 +21,7 @@ const ProductCard = ({ product }) => {
       <Image src={product.image} />
       <Text text={product.title} />
       <QuantityInput quantity={quantity} setQuantity={setQuantity} />
+      <Price price={product.price} />
       <AddToCartButton onClick={handleAddToCart} />
     </div>
   );
@@ -30,6 +32,7 @@ ProductCard.propTypes = {
     id: PropTypes.number,
     image: PropTypes.string,
     title: PropTypes.string,
+    price: PropTypes.number,
   }),
 };
 

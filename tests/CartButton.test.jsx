@@ -1,13 +1,13 @@
 import { describe, it, expect } from "vitest";
 import { render, screen } from "@testing-library/react";
 import { MemoryRouter } from "react-router-dom";
-import Cart from "../src/components/Cart.jsx";
+import CartButton from "../src/components/CartButton.jsx";
 
 describe("Cart component", () => {
   it("renders cart button", () => {
     render(
       <MemoryRouter>
-        <Cart itemCount={1} />
+        <CartButton itemCount={1} />
       </MemoryRouter>
     );
 
@@ -19,7 +19,7 @@ describe("Cart component", () => {
     const itemCount = 0;
     render(
       <MemoryRouter>
-        <Cart itemCount={itemCount} />
+        <CartButton itemCount={itemCount} />
       </MemoryRouter>
     );
 
@@ -31,7 +31,7 @@ describe("Cart component", () => {
     const itemCount = 5;
     render(
       <MemoryRouter>
-        <Cart itemCount={itemCount} />
+        <CartButton itemCount={itemCount} />
       </MemoryRouter>
     );
 
@@ -43,7 +43,7 @@ describe("Cart component", () => {
     const itemCount = 99;
     render(
       <MemoryRouter>
-        <Cart itemCount={itemCount} />
+        <CartButton itemCount={itemCount} />
       </MemoryRouter>
     );
 

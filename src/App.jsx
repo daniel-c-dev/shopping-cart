@@ -11,9 +11,7 @@ const App = () => {
       const itemExists = prevItems.find((item) => item.id === newItem.id);
       if (itemExists) {
         return prevItems.map((item) =>
-          item.id === newItem.id
-            ? { ...item, quantity: item.quantity + quantity }
-            : item
+          item.id === newItem.id ? { ...item, quantity: quantity } : item
         );
       } else {
         return [...prevItems, newItem];

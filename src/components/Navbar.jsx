@@ -1,5 +1,5 @@
 import NavigationLink from "./NavigationLink";
-import Cart from "./Cart";
+import CartButton from "./CartButton";
 import styles from "../styles/Navbar.module.css";
 import PropTypes from "prop-types";
 
@@ -9,7 +9,7 @@ const Navbar = ({ itemCount }) => {
       <ul className={styles.navbarLinks}>
         <NavigationLink path="/" name="Home" />
         <NavigationLink path="/shop" name="Shop" />
-        <Cart itemCount={itemCount} />
+        <CartButton itemCount={itemCount} path="/cart" />
       </ul>
     </nav>
   );

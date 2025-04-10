@@ -1,7 +1,6 @@
 .navbar {
   composes: secondaryBg from "colors.module.css";
-  min-height: 2.5rem;
-  max-height: 3rem;
+  height: 2.5rem;
   max-width: 100vw;
   display: flex;
 }
