@@ -1,0 +1,11 @@
+.cartItemsContainer {
+  display: flex;
+  flex-direction: column;
+  min-width: 50%;
+  max-width: 100rem;
+  gap: 1rem;
+}
+
+.cartEmptyText {
+  text-align: center;
+}
