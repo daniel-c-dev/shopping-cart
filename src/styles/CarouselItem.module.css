@@ -1,0 +1,15 @@
+.carouselItemContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.carouselItemImage {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 0.3rem;
+}
+.carouselItemText {
+  min-width: 6rem;
+  max-width: 10rem;
+}

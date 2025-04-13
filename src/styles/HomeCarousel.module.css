@@ -1,0 +1,15 @@
+.homeCarouselContainer {
+  width: 32rem;
+}
+
+@media (max-width: 1024px) {
+  .homeCarouselContainer {
+    width: 22rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .homeCarouselContainer {
+    width: 12rem;
+  }
+}

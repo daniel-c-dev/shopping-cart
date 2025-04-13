@@ -1,3 +1,4 @@
+import Text from "./Text.jsx";
 import fetchProducts from "./fetchProducts.js";
 import Products from "./Products.jsx";
 import { useState, useEffect } from "react";
@@ -20,7 +21,11 @@ const Shop = () => {
 
   return (
     <div className={styles.shopContainer}>
-      {loading ? <p>Loading products...</p> : <Products products={products} />}
+      {loading ? (
+        <Text text="Loading products..." />
+      ) : (
+        <Products products={products} />
+      )}
     </div>
   );
 };
