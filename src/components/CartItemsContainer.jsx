@@ -5,11 +5,14 @@ import styles from "../styles/CartItemsContainer.module.css";
 
 const CartItemsContainer = () => {
   const { cartItems } = useOutletContext();
+  const visibleItems = cartItems.filter((item) => item.quantity > 0);
 
   return (
     <div className={styles.cartItemsContainer}>
-      {cartItems.length > 0 ? (
-        cartItems.map((item, index) => <CartItem key={index} product={item} />)
+      {visibleItems.length > 0 ? (
+        visibleItems.map((item, index) => (
+          <CartItem key={index} product={item} />
+        ))
       ) : (
         <Text text="Cart is empty." className={styles.cartEmptyText} />
       )}

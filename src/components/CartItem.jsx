@@ -1,6 +1,7 @@
 import Text from "./Text";
 import Image from "./Image";
 import Price from "./Price";
+import ClearButton from "./ClearButton";
 import styles from "../styles/CartItem.module.css";
 import PropTypes from "prop-types";
 
@@ -15,6 +16,7 @@ const CartItem = ({ product }) => {
       <Text text={product.title} className={styles.cartItemTitle} />
       <Text text={product.quantity} className={styles.cartItemQuantity} />
       <Price price={product.price} />
+      <ClearButton product={product} />
     </div>
   );
 };
