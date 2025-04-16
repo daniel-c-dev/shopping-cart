@@ -1,8 +1,7 @@
-import Text from "./Text";
 import styles from "../styles/HomeTitle.module.css";
 
 const HomeTitle = () => {
-  return <Text text="Home" className={styles.homeTitle} />;
+  return <h1 className={styles.homeTitle}>Home</h1>;
 };
 
 export default HomeTitle;

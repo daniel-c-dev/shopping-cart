@@ -14,7 +14,7 @@ const App = () => {
           item.id === newItem.id ? { ...item, quantity: quantity } : item
         );
       } else {
-        return [...prevItems, newItem];
+        return [...prevItems, { ...newItem, quantity }];
       }
     });
   };

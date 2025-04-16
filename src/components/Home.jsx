@@ -1,7 +1,7 @@
 import Text from "./Text";
 import HomeTitle from "./HomeTitle";
 import HomeCarousel from "./HomeCarousel";
-import Button from "./Button";
+import RedirectButton from "./RedirectButton";
 import fetchProducts from "./fetchProducts";
 import { useState, useEffect } from "react";
 import styles from "../styles/Home.module.css";
@@ -23,8 +23,8 @@ const Home = () => {
 
   return (
     <div className={styles.homeContainer}>
-      <Button />
       <HomeTitle />
+      <RedirectButton path="/shop" text="Shop Now" />
       {loading ? (
         <Text text="Loading..." />
       ) : (

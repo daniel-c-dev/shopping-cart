@@ -9,3 +9,7 @@
   padding: 1rem;
   gap: 4rem;
 }
+
+.shopNowListItem {
+  list-style: none;
+}

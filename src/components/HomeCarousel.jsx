@@ -1,7 +1,4 @@
-import React from "react";
-import Text from "./Text";
 import CarouselItem from "./CarouselItem";
-import Button from "./Button";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -52,12 +49,14 @@ const HomeCarousel = ({ products }) => {
 };
 
 HomeCarousel.propTypes = {
-  product: PropTypes.shape({
-    id: PropTypes.number,
-    image: PropTypes.string,
-    title: PropTypes.string,
-    price: PropTypes.number,
-  }),
+  product: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number,
+      image: PropTypes.string,
+      title: PropTypes.string,
+      price: PropTypes.number,
+    })
+  ),
 };
 
 export default HomeCarousel;

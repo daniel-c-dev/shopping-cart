@@ -5,7 +5,7 @@ const Button = ({ className, text, src, value, onClick }) => {
   return (
     <button className={className} value={value} onClick={onClick}>
       {text ? text : null}
-      {src ? <img src={src} /> : null}
+      {src ? <img className={"buttonImage"} src={src} /> : null}
     </button>
   );
 };

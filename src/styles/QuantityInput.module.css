@@ -1,0 +1,59 @@
+.quantityInput {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+
+.inputField {
+  width: 3rem;
+  text-align: center;
+  border-color: #ced4da;
+  border-style: solid;
+  z-index: 10;
+}
+
+.minusButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  z-index: 0;
+}
+
+.plusButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  z-index: 0;
+}
+
+.minusButton img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  transform: scale(0.1);
+}
+
+.plusButton img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  transform: scale(0.1);
+}
+
+/*** Remove arrows from number input field ***/
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}

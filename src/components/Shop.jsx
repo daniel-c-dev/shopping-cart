@@ -22,7 +22,7 @@ const Shop = () => {
   return (
     <div className={styles.shopContainer}>
       {loading ? (
-        <Text text="Loading products..." />
+        <Text text="Loading products..." className={styles.loadingText} />
       ) : (
         <Products products={products} />
       )}

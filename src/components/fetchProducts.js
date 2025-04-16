@@ -12,7 +12,6 @@ const fetchProducts = async () => {
       title: product.title,
       image: product.image,
       price: product.price,
-      quantity: 1,
     }));
   } catch (error) {
     console.error("Error fetching products:", error);
