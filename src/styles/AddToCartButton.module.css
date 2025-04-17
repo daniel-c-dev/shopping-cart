@@ -2,4 +2,12 @@
   composes: secondaryBg from "colors.module.css";
   composes: secondaryColor from "colors.module.css";
   padding: 0.5rem 0.75rem 0.5rem 0.75rem;
+  border-style: none;
+  border-radius: 1rem;
+}
+
+.addToCart:hover {
+  cursor: pointer;
+  border-style: none;
+  border-radius: 1rem;
 }

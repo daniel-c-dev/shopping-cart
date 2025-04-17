@@ -4,4 +4,12 @@
   composes: secondaryColor secondaryBg tertiaryColorHover from "colors.module.css";
   width: 6rem;
   height: 2rem;
+  border-style: none;
+  border-radius: 1rem;
+}
+
+.redirectButton:hover {
+  cursor: pointer;
+  border-style: none;
+  border-radius: 1rem;
 }
